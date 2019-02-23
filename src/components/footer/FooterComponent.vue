@@ -1,6 +1,6 @@
 <template>
     <footer class="footer">
-        footer
+        Yi-Syuan Jhan@Copyright
     </footer>
 </template>
 
@@ -12,6 +12,13 @@ export default {
 
 <style lang="sass" scoped>
     .footer
-        border: 1px solid #000
+        background-color: #000
+        color: #fff
+        text-align: center
+        line-height: 28px
+        height: 30px
+        font-size: 0.975rem
+        font-weight: 600
+        border-top: 1px solid #777
         
 </style>
