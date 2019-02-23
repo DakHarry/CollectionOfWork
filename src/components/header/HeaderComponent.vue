@@ -68,20 +68,28 @@ export default {
                     &:hover
                         color: $color-main-orange
         & .nav_brand
-            flex-basis: 30%
-            padding: $nav-padding-tb 5% $nav-padding-tb 0
-            margin-left: $margin-space
+            flex-basis: 40%
+            padding: $nav-padding-tb 1px $nav-padding-tb 0
+            margin-left: 5%
             font-size: 18px
             font-weight: $title-bolder
             letter-spacing: 0.5px
             transition: linear .2s
+            @media screen and (min-width: 768px)
+                flex-basis: 30%
+                margin-left: $margin-space
+                padding: $nav-padding-tb 5% $nav-padding-tb 0
             @media screen and (min-width: 992px)
                 flex-basis: 12%
         & .nav_menu
             display: flex
             flex-direction: row
             flex-grow: 1
-            margin-right: $margin-space
+            margin-right: 5%
+            flex-basis: 55%
+            @media screen and (min-width: 768px)
+                margin-right: $margin-space
+                flex-basis: auto
             & .nav_menu_list
                 display: flex
                 justify-content: flex-end
@@ -91,21 +99,22 @@ export default {
                 flex-basis: 100%
                 & .nav_menu_list_ele > a
                     line-height: 50px
-                    padding-left: 1.25em
                     padding-right: 1.25em
                     cursor: pointer
                     transition: linear .2s
                     outline: none
                     text-decoration: none
                     color: #fff
-                    height: 100%
                     display: inline-block
-                    width: 100%
                     text-align: center
                     &:hover, &:active
                         color: $color-main-orange
                     & > i
                         font-size: 1rem
+                    @media screen and (min-width: 768px)
+                        padding-left: 1.25em
+                        height: 100%
+                        width: 100%
                 & .nav_menu_list_ele > span
                     transition: linear .2s
                     line-height: 50px

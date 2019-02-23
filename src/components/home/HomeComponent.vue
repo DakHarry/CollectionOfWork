@@ -99,13 +99,15 @@ export default {
     .content_bn
         z-index: -1
         width: 100%
-        height: 450px
+        height: 550px
         top: -50px
         position: relative
         background-size: cover
         background-image: url("../../assets/images/bn.jpg")
         background-repeat: no-repeat
         background-position: center
+        @media screen and (min-width: 450px)
+            height: 450px
         @media screen and (min-width: 768px)
             height: 650px
         & .content_intro
@@ -174,7 +176,8 @@ export default {
                             max-width: 250px
                     & .list_ele_desc
                         flex-basis: 70%
-                        padding-left: 2rem
+                        @media screen and (min-width: 992px)
+                            padding-left: 2rem
                         & .ele_desc_title
                             margin-bottom: 10px
                             font-size: 1.25rem
